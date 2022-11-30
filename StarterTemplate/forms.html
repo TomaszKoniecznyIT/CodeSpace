@@ -17,28 +17,75 @@
     />
 
     <title>Hello, world!</title>
+    <style>
+      .main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    </style>
   </head>
-  <body>
-    <h1 class="text center">Bootstrap Form</h1>
-    <div class="comtainer">
-      <form>
-        <input
-          type="text"
-          name="name"
-          class="form-control"
-          placeholder="Your Name *"
-          required
-        />
-        <input
-          type="email"
-          name="mail"
-          class="form-control"
-          placeholder="Your Email *"
-          required
-        />
-      </form>
-    </div>
 
+  <body>
+    <section class="main">
+      <h1 class="text center">Bootstrap Form</h1>
+      <div class="comtainer">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name *"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="mail"
+                  class="form-control"
+                  placeholder="Your Email *"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Your Phone Number *"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea
+                  name="text"
+                  name="comment"
+                  class="form-control"
+                  placeholder="Your Massage *"
+                  style="width: 100%; height: 150px"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                name="btnSubmit"
+                class="btn btn-outline-succcess btn-lg btn-block"
+                value="Send Massage"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
