@@ -16,3 +16,9 @@ print(a)
 print(b)
 print(c)
 print(d)
+
+# separated by a dashed line
+print("---"*5)
+
+# or print in one line
+print(a, b, c, d)
