@@ -6,4 +6,7 @@ number2 = float(input("Input the second number: "))
 result = number1/number2
 
 # printing the result
-print(result)
+print("The division of the first number and the second number is: ",result)
+
+#another way to print the result
+print(f"The division of the first number ({number1}) and the second number ({number2}) is: {result}.")
