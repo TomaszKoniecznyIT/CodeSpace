@@ -12,3 +12,14 @@ elif number1 != number2 and number2 != number3 and number3 != number1:
 # if they are neither equal nor different
 else:
     print("Neither all are equal or different")
+
+
+
+set_of_numbers = {number1, number2, number3}
+if len(set_of_numbers) == 1:
+    print("All numbers are equal")
+if len(set_of_numbers) == 2:
+    print("Neither all are equal or different")
+if len(set_of_numbers) == 3:
+    print("All numbers are different")
+
