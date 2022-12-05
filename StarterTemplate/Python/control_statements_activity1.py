@@ -5,4 +5,7 @@ number3 = float(input("Input the third number: "))
 
 if number1 == number2 and number1 == number3:
     print("All numbers are equal")
-elif number1 
+elif number1 != number2 and number2 != number3 and number3 != number1:
+    print("All numbers are different")
+else:
+    print("Neither all are equal or different")
