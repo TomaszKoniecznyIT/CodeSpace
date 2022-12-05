@@ -14,12 +14,13 @@ else:
     print("Neither all are equal or different")
 
 
-
-set_of_numbers = {number1, number2, number3}
-if len(set_of_numbers) == 1:
+# adding another method
+set_of_numbers = {number1, number2, number3}   
+# we can check how many elements the set made of given numbers has
+if len(set_of_numbers) == 1: # 1 item - 3 of the same numbers
     print("All numbers are equal")
-if len(set_of_numbers) == 2:
+if len(set_of_numbers) == 2: # 2 items - 2 same numbers plus 1 different
     print("Neither all are equal or different")
-if len(set_of_numbers) == 3:
+if len(set_of_numbers) == 3: # 3 items - 3 different numbers
     print("All numbers are different")
 
