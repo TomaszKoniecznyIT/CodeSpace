@@ -18,3 +18,18 @@ def factorial(n):
 n = int(input("Enter the number for which you want to calculate the factorial: "))
 # function call
 factorial(n)
+
+
+# or another method
+
+def get_factorial(number):
+    # we set the result to 1
+    result = 1
+    # we create a loop that executes until the number reaches 0
+    while number > 0:
+        result *= number  # we multiply the result by the number
+        number -= 1       # we decrease the number by 1
+    return result
+
+
+print(get_factorial(n))
