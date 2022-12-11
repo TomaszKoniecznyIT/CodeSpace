@@ -28,6 +28,16 @@ def display_rules():
     print("SCISSORS cut PAPER")
 
 
+def if_play_again():
+    while True:
+        play_a = input("Play again? (y/n): ")
+        play_a = play_a.lower()
+        if play_a == "y":
+            return True
+        elif play_a == "n":
+            return False
+
+
 dict_full_name = {"r": "ROCK", "p": "PAPER", "s": "SCISSORS"}
 
 display_rules()
@@ -50,9 +60,11 @@ while play_again:
             f"The computer chose {dict_full_name[computer]}, You chose {dict_full_name[player]}.")
         print("YOU WINS !!!")
         score_player += 1
-    input("Play again? (y/n): ")
-    if
-    play_again = False
+    play_again = if_play_again()
+
+print("FINAL SCORES:")
+print(f"Computer: {score_computer}")
+print(f"Player: {score_player}")
 
 print(computer)
 print(player)
