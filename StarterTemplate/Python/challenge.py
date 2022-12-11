@@ -1,17 +1,20 @@
 from random import choice   # import from random choice function
 
 # a function that receives the player's choice
+
+
 def user_selection():
     while True:     # looping when the user enters a different letter like R,r,P,p,S,s
         user = input("Enter a choice (Rock(r), Paper(p), Scissores(s)): ")
-        user= user.lower()    # converting a capital letter to a lowercase letter
+        user = user.lower()    # converting a capital letter to a lowercase letter
         if user == "r" or user == "p" or user == "s":
             return user
 
 
 # computer randomization function
 def computer_selection():
-    letters_to_choose = ["r", "p", "s"]   # a list of items from which one will be random
+    # a list of items from which one will be random
+    letters_to_choose = ["r", "p", "s"]
     computer = choice(letters_to_choose)  # random selection of one
     return computer
 
@@ -25,19 +28,31 @@ def display_rules():
     print("SCISSORS cut PAPER")
 
 
-dict_full_name = {"r":"ROCK", "p":"PAPER", "s":"SCISSORS"}
+dict_full_name = {"r": "ROCK", "p": "PAPER", "s": "SCISSORS"}
 
 display_rules()
 score_player = 0
 score_computer = 0
 play_again = True
 
-# while play_again:
-computer = computer_selection()
-player = user_selection()
-if computer == player:
-    print(f"Both players selected {dict_full_name[computer]}. It's a tie!")
+while play_again:
+    computer = computer_selection()
+    player = user_selection()
+    if computer == player:
+        print(f"Both players selected {dict_full_name[computer]}. It's a tie!")
+    elif (computer == "r" and player == "s") or (computer == "p" and player == "r") or (computer == "s" and player == "p"):
+        print(
+            f"The computer chose {dict_full_name[computer]}, You chose {dict_full_name[player]}.")
+        print("COMPUTER WINS !!!")
+        score_computer += 1
+    else:
+        print(
+            f"The computer chose {dict_full_name[computer]}, You chose {dict_full_name[player]}.")
+        print("YOU WINS !!!")
+        score_player += 1
+    input("Play again? (y/n): ")
+    if
+    play_again = False
 
 print(computer)
 print(player)
-
