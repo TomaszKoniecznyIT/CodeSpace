@@ -16,6 +16,7 @@ def computer_selection():
     return computer
 
 
+# function displays the rules of the game
 def display_rules():
     print("The Winning Rules are as follows:")
     print()
@@ -24,5 +25,19 @@ def display_rules():
     print("SCISSORS cut PAPER")
 
 
+dict_full_name = {"r":"ROCK", "p":"PAPER", "s":"SCISSORS"}
 
+display_rules()
+score_player = 0
+score_computer = 0
+play_again = True
+
+# while play_again:
+computer = computer_selection()
+player = user_selection()
+if computer == player:
+    print(f"Both players selected {dict_full_name[computer]}. It's a tie!")
+
+print(computer)
+print(player)
 
