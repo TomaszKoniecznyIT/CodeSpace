@@ -65,6 +65,3 @@ while play_again:
 print("FINAL SCORES:")
 print(f"Computer: {score_computer}")
 print(f"Player: {score_player}")
-
-print(computer)
-print(player)
