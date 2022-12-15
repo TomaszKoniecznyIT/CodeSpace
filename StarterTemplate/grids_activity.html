@@ -28,21 +28,21 @@
   </head>
   <body>
     <div class="container">
-      <h1>2,3,4 Grid - Equal Width</h1>
+      <h1>Column wrapping</h1>
     </div>
 
-    <!-- MD 4 + 4 +4 -->
+    <!-- MD 2+8+2 and SM 3+9 new line SM 12 -->
     <div class="container my-container">
-      <h2>MD 4 + 4 + 4</h2>
-      <div class="row bg-info" style="height: 200px">
-        <div class="col-md-4 my-col">
-          <div class="demo">.col-md-4</div>
+      <h2>MD 2+8+2 and SM 3+9 new line SM 12</h2>
+      <div class="row" style="height: 200px">
+        <div class="col-md-2 col-sm-3 bg-success my-col">
+          <div class="demo">.col-sm-3 .col-md-2</div>
         </div>
-        <div class="col-md-4 my-col">
-          <div class="demo">.col-md-4</div>
+        <div class="col-md-8 col-sm-9 bg-info my-col">
+          <div class="demo">.col-sm-9 .col-md-8</div>
         </div>
-        <div class="col-md-4 my-col">
-          <div class="demo">.col-md-4</div>
+        <div class="col-md-2 col-sm-12 bg-danger my-col">
+          <div class="demo">.col-sm-12 .col-md-2</div>
         </div>
       </div>
     </div>
