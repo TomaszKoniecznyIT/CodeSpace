@@ -1,3 +1,6 @@
+// a function that calculates the sum of any array
+// taking successive elements of the array sums up and stores in the sum variable
+// then returns that sum divided by the number of elements in the array
 function averageArray(array){
     let sum = 0;
     for (let i = 0; i < array.length; i++){
