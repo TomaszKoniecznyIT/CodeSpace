@@ -1,6 +1,7 @@
 const factorial = (number) => {
   if (number < 0) {
-    return console.log("There is no factorial for negative numbers");
+    console.log("There is no factorial for negative numbers");
+    return "undefined !!!";
   } else if (number === 0) {
     return 1;
   } else {
@@ -12,5 +13,5 @@ const factorial = (number) => {
   }
 };
 
-const num = 6;
+const num = -1;
 console.log(`Factorial ${num}! is ${factorial(num)}.`);
