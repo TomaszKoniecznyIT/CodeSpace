@@ -17,7 +17,7 @@ const factorial = (number) => {
   }
 };
 
-// sample array
+// sample number
 const num = 6;
 
 // displaying information along with calling the function
