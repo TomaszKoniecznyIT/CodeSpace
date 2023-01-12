@@ -18,7 +18,7 @@ const factorial = (number) => {
 };
 
 // sample array
-const num = -1;
+const num = 6;
 
 // displaying information along with calling the function
 console.log(`Factorial ${num}! is ${factorial(num)}.`);
