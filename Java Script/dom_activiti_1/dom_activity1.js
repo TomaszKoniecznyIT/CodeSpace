@@ -14,6 +14,8 @@ text.textContent += " !!!";
 // to the <div> we add the class div-btn
 document.querySelector("div").classList.add("div-btn");
 
+// adding an action to the button
+// the action is to change the css for the button
 btnEl.addEventListener("click", function () {
   btnEl.classList.toggle("pres-btn");
 });
