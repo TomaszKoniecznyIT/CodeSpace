@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>DOM Activity 2</title>
   </head>
   <body>
-    <h1>Volume of a sphere.</h1>
-    <div>
-      <p>To calculate the volume of a sphere, enter its radius.</p>
-    </div>
+    <h1 class="title">Volume of a sphere.</h1>
     <section>
       <div>
-        <input type="text" placeholder="Radius" />
-        <button>Calculate</button>
+        <p class="text">
+          To calculate the volume of a sphere, enter its radius.
+        </p>
       </div>
       <div>
-        <p>Volume of a sphere.</p>
-        <p></p>
+        <input class="input" type="text" placeholder="Radius" />
+      </div>
+      <div>
+        <button class="btn">Calculate</button>
       </div>
     </section>
+    <div>
+      <p class="text">Volume of a sphere.</p>
+      <p class="result">RESULT</p>
+    </div>
   </body>
 </html>
