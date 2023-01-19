@@ -71,32 +71,32 @@ const display = (result) => {
   }
 };
 
-// initial settings
-startGame();
-
-// check if a button has been pressed
-paperEL.addEventListener("click", function () {
-  userChoice = "paper";
+const drawComparisonDisplay = () => {
   //   calling the random function and saving it to a variable
   compChoice = drawForComputer();
   // calling the result checking function
   result = comparisonResult(userChoice, compChoice);
   // calling the function displaying information about the result
   display(result);
+};
+
+// initial settings
+startGame();
+
+// check if a button has been pressed
+paperEL.addEventListener("click", function () {
+  userChoice = "paper";
+  drawComparisonDisplay();
 });
 
 rockEL.addEventListener("click", function () {
   userChoice = "rock";
-  compChoice = drawForComputer();
-  result = comparisonResult(userChoice, compChoice);
-  display(result);
+  drawComparisonDisplay();
 });
 
 scissorsEL.addEventListener("click", function () {
   userChoice = "scissors";
-  compChoice = drawForComputer();
-  result = comparisonResult(userChoice, compChoice);
-  display(result);
+  drawComparisonDisplay();
 });
 
 newGameEL.addEventListener("click", function () {
