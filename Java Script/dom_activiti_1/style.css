@@ -15,3 +15,9 @@ body {
 .div-btn {
   text-align: center;
 }
+.pres-btn {
+  font-size: 4rem;
+  color: #29b129;
+  background-color: rgb(3, 41, 22);
+  width: 20rem;
+}
