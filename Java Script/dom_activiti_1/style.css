@@ -1,0 +1,17 @@
+body {
+  background-color: #570c21;
+}
+.text {
+  text-align: center;
+  font-size: 3rem;
+  color: #df839d;
+}
+.btn-set {
+  font-size: 2rem;
+  color: #df839d;
+  background-color: rgb(43, 9, 9);
+  width: 10rem;
+}
+.div-btn {
+  text-align: center;
+}
